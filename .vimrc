@@ -1,11 +1,3 @@
-set nocompatible
-
-" Multiple cursors
-let g:multi_cursor_next_key='<C-n>'
-let g:multi_cursor_prev_key='<C-N>'
-let g:multi_cursor_skip_key='<C-x>'
-let g:multi_cursor_quit_key='<Esc>'
-
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -43,6 +35,9 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc
 " JK motions: Line motions
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
+
+" YCM goto
+map <Leader><Leader>d :YcmCompleter GoTo<CR>
 
 " ===== SYNTASTIC 
 "mark syntax errors with :signs

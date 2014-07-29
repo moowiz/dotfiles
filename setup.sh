@@ -1,6 +1,7 @@
 #!/bin/bash
 
-ln -sf .vimrc $HOME/.vimrc
-ln -sf .zshrc $HOME/.zshrc
+ln -sf $HOME/.vim/.vimrc $HOME/.vimrc
+ln -sf $HOME/.vim/.zshrc $HOME/.zshrc
 vim -c "BundleInstall"
+bundle/YouCompleteMe/install.sh --clang-completer
 
