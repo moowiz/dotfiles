@@ -1,5 +1,4 @@
 set nocompatible              " be iMproved, required
-filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -20,17 +19,19 @@ Plugin 'bling/vim-airline'
 " To make vim airline show up
 set laststatus=2
 
-
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-fugitive'
-
-Plugin 'L9'
 
 call vundle#end()
 syntax on
 filetype plugin indent on
+
 :let mapleader = ","
+
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc
+set expandtab
+set shiftwidth=2
+set softtabstop=2
 
 " JK motions: Line motions
 map <Leader>j <Plug>(easymotion-j)
@@ -49,7 +50,6 @@ let g:syntastic_auto_loc_list=1
 
 " ===== Add some shortcuts for ctags
 map <Leader>tt <esc>:TagbarToggle<cr>
-
 
 let g:indent_guides_enable_on_vim_startup=1
 let g:ctrlp_map = "<c-p>"

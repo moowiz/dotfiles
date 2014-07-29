@@ -1,18 +1,18 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 export PATH=/Users/moowiz/gobin:$GAE_SDK/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH:$HOME/depot_tools
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="seeker"
+ZSH_THEME="blinks"
 
 DEFAULT_USER="moowiz"
 
 # Example aliases
-alias zshconfig="subl ~/.zshrc"
+alias zshconfig="vim ~/.zshrc"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -52,8 +52,7 @@ export PYTHONPATH=$PYTHONPATH:$GAE_SDK/bin:$GAE_SDK/share/google-app-engine/lib/
 export APPLICATION_ID="ucb-codereview"
 export DJANGO_SETTINGS_MODULE="settings"
 
-
-export GOPATH='/Users/moowiz/go'
+export GOPATH=$HOME/go
 
 export EDITOR='vim'
 
@@ -69,9 +68,3 @@ alias gad='git add'
 j () {
     cd `fasd -d $1`
 }
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
-__rvm_project_rvmrc
