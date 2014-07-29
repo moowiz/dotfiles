@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
-export PATH=/Users/moowiz/gobin:$GAE_SDK/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH
+export PATH=/Users/moowiz/gobin:$GAE_SDK/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH:$HOME/depot_tools
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -45,7 +45,7 @@ setopt nolistambiguous
 
 bindkey -v
 
-GAEVERSION=1.9.6
+GAEVERSION=1.9.7
 export GAE_SDK=/usr/local/Cellar/google-app-engine/$GAEVERSION
 export PYTHONPATH=$PYTHONPATH:$GAE_SDK/bin:$GAE_SDK/share/google-app-engine/lib/:$GAE_SDK/share/google-app-engine/
 
